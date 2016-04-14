@@ -1,14 +1,3 @@
-//src.js
-var pluralize = function(word, number) {
-     if(number === 1) {
-          return word;
-     }
-     else {
-          return word + "s";
-     }
- };
-
-//spec.js
 describe("pluralize", function() {
 
    it("adds an s if the number is 0", function() {

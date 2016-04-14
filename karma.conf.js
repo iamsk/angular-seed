@@ -1,36 +1,41 @@
-module.exports = function(config){
-  config.set({
+module.exports = function (config) {
+    config.set({
 
-    basePath : './',
+        basePath: './',
 
-    files : [
-      'app/bower_components/angular/angular.js',
-      'app/bower_components/angular-route/angular-route.js',
-      'app/bower_components/angular-mocks/angular-mocks.js',
+        files: [
+            'app/bower_components/angular/angular.js',
+            'app/bower_components/angular-route/angular-route.js',
+            'app/bower_components/angular-mocks/angular-mocks.js',
 
-      'app/smallest_test/*.js',
-//      'app/test_*/**/*.js'
-//      'app/components/**/*.js',
-//      'app/view*/**/*.js',
-    ],
+            'app/demo_smallest_test/src.js',
+            'app/demo_smallest_test/jasmine_demo_spec.js',
+            //'app/demo_*/*.js',
+            //'app/demo_controller/*.js',
+            //'app/demo_directives/*.js',
+            //'app/demo_filters/*.js',
 
-    autoWatch : true,
+            //'app/components/**/*.js',
+            //'app/view*/**/*.js',
+        ],
 
-    frameworks: ['jasmine'],
+        autoWatch: true,
 
-    browsers : ['Chrome'],
+        frameworks: ['jasmine'],
 
-    plugins : [
+        browsers: ['Chrome'],
+
+        plugins: [
             'karma-chrome-launcher',
             'karma-firefox-launcher',
             'karma-jasmine',
             'karma-junit-reporter'
-            ],
+        ],
 
-    junitReporter : {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
+        junitReporter: {
+            outputFile: 'test_out/unit.xml',
+            suite: 'unit'
+        }
 
-  });
+    });
 };
