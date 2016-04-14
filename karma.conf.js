@@ -8,12 +8,12 @@ module.exports = function (config) {
             'app/bower_components/angular-route/angular-route.js',
             'app/bower_components/angular-mocks/angular-mocks.js',
 
-            'app/demo_smallest_test/src.js',
-            'app/demo_smallest_test/jasmine_demo_spec.js',
-            //'app/demo_*/*.js',
-            //'app/demo_controller/*.js',
-            //'app/demo_directives/*.js',
-            //'app/demo_filters/*.js',
+            'unit-tests/demo_smallest_test/src.js',
+            'unit-tests/demo_smallest_test/jasmine_demo_spec.js',
+            'unit-tests/demo_*/*.js',
+            //'unit-tests/demo_controller/*.js',
+            //'unit-tests/demo_directives/*.js',
+            //'unit-tests/demo_filters/*.js',
 
             //'app/components/**/*.js',
             //'app/view*/**/*.js',
